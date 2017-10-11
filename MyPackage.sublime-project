@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": "LSP"
+		},
+		{
+			"path": "MyHaskell"
+		},
+		{
+			"path": "MyIdris"
+		},
+		{
+			"path": "User"
+		}
+	]
+}
