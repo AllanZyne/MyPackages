@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Haskell
+file_extensions:
+  - cabal
+scope: source.haskell
+
+contexts:
+  main:

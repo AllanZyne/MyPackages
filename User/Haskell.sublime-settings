@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the Haskell syntax
+{
+    "word_separators": "./\\()\"-:,.;<>~!@#$%^&*|+=[]{}`~?",
+    "translate_tabs_to_spaces": true,
+}

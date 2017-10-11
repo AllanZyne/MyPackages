@@ -1,0 +1,11 @@
+{
+	"caret_style": "solid",
+	"color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
+	"extensions":
+	[
+		"md",
+		"mdown"
+	],
+	"highlight_line": true,
+	"line_numbers": false
+}

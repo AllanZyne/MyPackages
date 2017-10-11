@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"AlignTab",
+		"BracketHighlighter",
+		"CMakeEditor",
+		"ConvertToUTF8",
+		"CSON Converter",
+		"EditorConfig",
+		"Emmet",
+		"GBK Support",
+		"HexViewer",
+		"IMESupport",
+		"Indent XML",
+		"MarkdownEditing",
+		"Ninja",
+		"NSIS",
+		"Package Control",
+		"QML",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"Text Pastry",
+		"Trimmer",
+		"Vue Syntax Highlight"
+	]
+}

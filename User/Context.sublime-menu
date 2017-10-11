@@ -1,0 +1,14 @@
+[
+   {"caption" : "-"},
+    {
+      "id": "aligntab",
+      "caption": "Align By",
+      "children": [
+          {
+          "caption" : "{",
+          "command" : "align_tab",
+          "args"    : {"user_input" : "\\{"}
+          }
+      ]
+  }
+]
