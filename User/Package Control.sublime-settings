@@ -18,15 +18,14 @@
 		"HexViewer",
 		"IMESupport",
 		"Indent XML",
+		"LSP",
 		"MarkdownEditing",
 		"Ninja",
 		"NSIS",
 		"Package Control",
 		"QML",
+		"Sass",
 		"SublimeLinter",
-		"SublimeLinter-jshint",
-		"Text Pastry",
-		"Trimmer",
 		"Vue Syntax Highlight"
 	]
 }
