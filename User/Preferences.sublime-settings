@@ -2,12 +2,24 @@
 	"auto_complete_triggers":
 	[
 		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
 			"characters": ".",
 			"selector": "source.js"
 		},
 		{
 			"characters": ".",
 			"selector": "source.ts"
+		},
+		{
+			"characters": ".",
+			"selector": "source.python"
+		},
+		{
+			"characters": ".>:",
+			"selector": "source.c++"
 		}
 	],
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
@@ -21,8 +33,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"SublimeLinter",
 		"Haskell",
+		"SublimeLinter",
 		"Vintage"
 	],
 	"rulers":
