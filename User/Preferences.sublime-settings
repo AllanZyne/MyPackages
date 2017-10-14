@@ -24,16 +24,17 @@
 	],
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"fallback_encoding": "GBK",
-	"font_face": "Consolas",
+	"font_face": "Source Code Pro",
 	"font_options":
 	[
 		"no_italic"
 	],
-	"font_size": 13,
+	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Haskell",
+		"Markdown",
 		"SublimeLinter",
 		"Vintage"
 	],
