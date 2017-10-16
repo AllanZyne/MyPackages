@@ -34,8 +34,6 @@ contexts:
         - meta_scope: meta.module.idris
         - match: ($|;|(?=--))
           pop: true
-          captures:
-            1: keyword.control.idris
         - match: '([a-zA-Z0-9._'']+)'
           scope: meta.declaration.module.idris
     - match: \b(import\s+public|import)\b
@@ -45,8 +43,6 @@ contexts:
         - meta_scope: meta.import.idris
         - match: ($|;|(?=--))
           pop: true
-          captures:
-            1: keyword.other.idris
         - match: '([a-zA-Z0-9._'']+)'
           scope: support.other.module.idris
     - include: param_decl
@@ -63,8 +59,7 @@ contexts:
         - match: (\))$
           pop: true
           captures:
-            1: keyword.other.idris
-            2: punctuation.context.begin.idris
+            1: punctuation.context.end.idris
         - include: ty_expression
   context_signature:
     - match: '(\()((?=.*\)\s*=>)|(?=[^)]*$))'
@@ -75,7 +70,8 @@ contexts:
         - match: (\))\s*(=>)
           pop: true
           captures:
-            1: punctuation.context.begin.idris
+            1: punctuation.context.end.idris
+            2: keyword.operator.double-arrow.idris
         - include: ty_expression
   parameter_type:
     - match: '(\()([\w'']+)\s*(:)(?!:)'
@@ -88,9 +84,7 @@ contexts:
         - match: \)
           pop: true
           captures:
-            1: punctuation.delimiter.idris
-            2: variable.parameter.idris
-            3: keyword.operator.annot.idris
+            0: punctuation.delimiter.idris
         - include: ty_expression
     - match: '(\{)((auto|default .+)\s+)?([\w'']+)\s*(:)(?!:)'
       captures:
@@ -103,10 +97,7 @@ contexts:
         - match: '\}'
           pop: true
           captures:
-            1: punctuation.delimiter.idris
-            2: storage.modifier.idris
-            4: variable.parameter.idris
-            5: keyword.operator.annot.idris
+            0: punctuation.delimiter.idris
         - include: ty_expression
   ty_expression:
     - match: '->'
@@ -135,10 +126,6 @@ contexts:
         - meta_scope: meta.function.type-signature.idris
         - match: '(;|(?=--)|(?<=[^\s>])\s*(?!->)\s*$)'
           pop: true
-          captures:
-            2: entity.name.function.idris
-            3: entity.name.function.idris
-            4: keyword.operator.colon.idris
         - include: context_signature
         - include: ty_expression
   language_const:
@@ -166,6 +153,7 @@ contexts:
           pop: true
           captures:
             1: keyword.other.idris
+            2: keyword.operator.idris
         - include: ty_expression
   data_ctor:
     - match: >-
@@ -213,11 +201,9 @@ contexts:
   number_integer:
     - match: '\b([0-9]+|0([xX][0-9a-fA-F]+|[oO][0-7]+))\b'
       scope: constant.numeric.idris
-      comment: integer literal
   number_float:
     - match: '\b([0-9]+\.[0-9]+([eE][+-]?[0-9]+)?|[0-9]+[eE][+-]?[0-9]+)\b'
       scope: constant.numeric.float.idris
-      comment: float literal
   string_double:
     - match: '"'
       captures:
@@ -227,7 +213,7 @@ contexts:
         - match: '"'
           pop: true
           captures:
-            0: punctuation.definition.string.begin.idris
+            0: punctuation.definition.string.end.idris
         - include: escape_characters
   string_single:
     - match: >-
