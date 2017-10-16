@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+${1:name} : ${2:Int} -> ${3:Int}
+${1:name} ${4:val} = ${5:expr1}
+${1:name} ${6:_} = ${7:expr2}
+]]></content>
+	<tabTrigger>fun</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Function</description>
+</snippet>

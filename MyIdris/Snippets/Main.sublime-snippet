@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+module Main
+
+main : IO ()
+main = undefined
+
+]]></content>
+	<tabTrigger>main</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Main</description>
+</snippet>

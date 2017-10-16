@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+interface ${1:MyClass} where
+	${2:myFunction} : ${3:String}
+]]></content>
+	<tabTrigger>interface</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Interface</description>
+</snippet>

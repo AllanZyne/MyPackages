@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Functor ${1:Type} where
+	map f fa = ?holeFunctor
+]]></content>
+	<tabTrigger>Functor</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Functor implementation</description>
+</snippet>

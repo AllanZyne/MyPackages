@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+Alternative ${1:Type} where
+	empty = ?holeAlternativeEmpty
+	fa <|> fb = ?holeAlternative
+]]></content>
+	<tabTrigger>Alternative</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Alternative implementation</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Foldable ${1:Type} where
+	foldr = ?holeFoldableFoldr
+]]></content>
+	<tabTrigger>Foldable</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Foldable implementation</description>
+</snippet>

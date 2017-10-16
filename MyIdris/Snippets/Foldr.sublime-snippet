@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+foldr (\\${1:element} ${2:x} => ${2:x} + ${1:element}) ${3:acc} ${4:collection}
+]]></content>
+	<tabTrigger>foldr</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Foldr</description>
+</snippet>

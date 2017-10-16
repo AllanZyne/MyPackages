@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Monoid ${1:Type} where
+	neutral = ?holeMonoid
+]]></content>
+	<tabTrigger>Monoid</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Monoid implementation</description>
+</snippet>

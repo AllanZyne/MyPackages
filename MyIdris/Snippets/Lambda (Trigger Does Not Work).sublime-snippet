@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\${1:inputs} => ${2:body}
+]]></content>
+	<tabTrigger>lambda</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Lambda (trigger does not work)</description>
+</snippet>

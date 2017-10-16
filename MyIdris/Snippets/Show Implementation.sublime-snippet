@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Show ${1:Type} where
+	show s = ?holeShow
+]]></content>
+	<tabTrigger>Show</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Show implementation</description>
+</snippet>

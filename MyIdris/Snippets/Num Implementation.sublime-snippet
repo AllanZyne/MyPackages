@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+Num ${1:Type} where
+(+) a b = ?holePlus
+(*) a b = ?holeMult
+fromInteger i = ?holeFromInteger
+]]></content>
+	<tabTrigger>Num</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Num implementation</description>
+</snippet>

@@ -80,7 +80,7 @@ function handlePattern(p) {
 }
 
 
-function converVSCJson(inputFile, outputFile) {
+function convertSyntax(inputFile, outputFile) {
 	let content = fs.readFileSync(inputFile, 'utf8');
 	let data = JSON.parse(content);
 
@@ -123,5 +123,66 @@ function converVSCJson(inputFile, outputFile) {
 	fs.writeFileSync(outputFile, dumpHead + dump, 'utf8');
 }
 
-converVSCJson('./idris.json', './idris.sublime-syntax');
-// converVSCJson('./idris.literate.json', './idris.literate.sublime-syntax');
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
+function handleSnippet(content) {
+	let index = 1;
+	let nameMap = {};
+
+	// console.log();
+	// console.log(content);
+	// console.log('===========================')
+
+	return content.replace(/\${([^}]*)}/g, function(full, match) {
+		let seps = match.split(':');
+
+		if (seps.length == 1) {
+			let ii = nameMap[match];
+			if (! ii) {
+				ii = nameMap[match] = index++;
+			}
+
+			return '${' + ii + ':' + match + '}';
+		}
+		else if (seps.length == 2) {
+			// console.log(parseInt(seps[0]) != NaN);
+			if (! isNaN(parseInt(seps[0])))
+				return;
+
+			let ii = nameMap[seps[0]];
+			if (! ii) {
+				ii = nameMap[seps[0]] = index++;
+			}
+			return '${' + ii + ':' + seps[1] + '}';
+		} else {
+			console.error('!!!!!');
+		}
+	})
+}
+
+function convertSnippets(inputFile, outputFile) {
+	let content = fs.readFileSync(inputFile, 'utf8');
+	let data = JSON.parse(content);
+
+	for (let desp in data) {
+		let snip = data[desp];
+
+		let sublime_snippet = `<snippet>
+	<content><![CDATA[
+${handleSnippet(snip.body.join('\n'))}
+]]></content>
+	<tabTrigger>${snip.prefix}</tabTrigger>
+	<scope>source.idris</scope>
+	<description>${desp}</description>
+</snippet>
+`;
+
+		fs.writeFileSync(outputFile + toTitleCase(desp) + '.sublime-snippet', sublime_snippet, 'utf8');
+	}
+}
+
+// convertSyntax('./idris.json', './idris.sublime-syntax');
+// convertSyntax('./idris.literate.json', './idris.literate.sublime-syntax');
+convertSnippets('./Snippets/idris.json', './Snippets/');

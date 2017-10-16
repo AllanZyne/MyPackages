@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+where ${1:name} = ${2:value}
+]]></content>
+	<tabTrigger>where</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Where</description>
+</snippet>

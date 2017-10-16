@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Cast undefined undefined where
+	case from = ?holeTo
+]]></content>
+	<tabTrigger>Cast</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Cast implementation</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+do
+	${1:return value}
+]]></content>
+	<tabTrigger>do</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Do</description>
+</snippet>

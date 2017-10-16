@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+case ${1:var} of
+	${2:Just a} => ${3:body}
+	${4:_} => ${5:remaining}
+]]></content>
+	<tabTrigger>case</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Case</description>
+</snippet>

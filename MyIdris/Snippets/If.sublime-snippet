@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if ${1:cond}
+	then ${2:branch1}
+	else ${3:branch2}
+]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.idris</scope>
+	<description>If</description>
+</snippet>

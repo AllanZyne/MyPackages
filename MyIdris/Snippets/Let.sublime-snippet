@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+let
+	${1:name} = ${2:value}
+in
+	${3:expr}
+]]></content>
+	<tabTrigger>let</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Let</description>
+</snippet>

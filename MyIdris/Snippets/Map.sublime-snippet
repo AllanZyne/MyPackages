@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+map (\\${1:element} => ${1:element}) ${2:collection}
+]]></content>
+	<tabTrigger>map</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Map</description>
+</snippet>

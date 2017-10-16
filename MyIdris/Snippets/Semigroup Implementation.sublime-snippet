@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Semigroup ${1:Type} where
+	a <+> b = ?holeSemigroup
+]]></content>
+	<tabTrigger>Semigroup</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Semigroup implementation</description>
+</snippet>

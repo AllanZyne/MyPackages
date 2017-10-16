@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+Applicative ${1:Type} where
+	pure a = ?holePureApplicative
+	f <*> fa = ?holeApplyApplicative
+]]></content>
+	<tabTrigger>Applicative</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Applicative implementation</description>
+</snippet>

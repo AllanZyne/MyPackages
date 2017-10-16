@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+implementation ${1:Show} ${2:String} where
+	${3:function} = ${4:id}
+]]></content>
+	<tabTrigger>implementation</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Implementation</description>
+</snippet>

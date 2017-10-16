@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+DecEq undefined where
+	decEq t1 t2 = ?holeDecEq
+]]></content>
+	<tabTrigger>DecEq</tabTrigger>
+	<scope>source.idris</scope>
+	<description>DecEq implementation</description>
+</snippet>

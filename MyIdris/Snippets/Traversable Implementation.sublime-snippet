@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Traversable ${1:Type} where
+	traverse = ?holeTraverse
+]]></content>
+	<tabTrigger>Traversable</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Traversable implementation</description>
+</snippet>

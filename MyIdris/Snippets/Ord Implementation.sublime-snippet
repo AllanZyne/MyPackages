@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Ord ${1:Type} where
+	compare a b = ?holeOrd
+]]></content>
+	<tabTrigger>Ord</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Ord implementation</description>
+</snippet>

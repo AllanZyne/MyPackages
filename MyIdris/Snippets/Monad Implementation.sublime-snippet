@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Monad ${1:Type} where
+	fa >>= f = ?holeMonadBind
+]]></content>
+	<tabTrigger>Monad</tabTrigger>
+	<scope>source.idris</scope>
+	<description>Monad implementation</description>
+</snippet>
