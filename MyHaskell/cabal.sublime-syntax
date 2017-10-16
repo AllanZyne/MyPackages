@@ -1,10 +1,90 @@
 %YAML 1.2
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
-name: Haskell
+name: Cabal
 file_extensions:
   - cabal
-scope: source.haskell
-
+scope: source.cabal
 contexts:
   main:
+    - match: |-
+        (?ix)(\n|^)
+            ( name
+            | version
+            | cabal-version
+            | build-type
+            | license(-file)?
+            | copyright
+            | author
+            | maintainer
+            | stability
+            | homepage
+            | bug-reports
+            | package-url
+            | synopsis
+            | data-(files|dir)
+            | description
+            | category
+            | extra-(source|doc|tmp)-files
+            ):
+      scope: keyword.other.cabal
+    - match: |-
+        (?ix)^[ \t]+
+            ( build-depends
+            | other-modules
+            | hs-source-dirs
+            | ((other|default)-)?extensions
+            | build-tools
+            | buildable
+            | ghc(-(prof|shared))?-options
+            | (install-)?includes
+            | include-dirs
+            | (c|js)-sources
+            | extra(-ghci)?-libraries
+            | extra-lib-dirs
+            | (cc|cpp|ld)-options
+            | pkgconfig-depends
+            | default-language
+            | frameworks
+            | default
+            | manual
+            | location
+            | branch
+            | tag
+            | subdir
+            | tested-with
+            | exposed(-modules)?
+            | reexported-modules
+            | main-is
+            | type
+            | test-module
+            | description
+            | setup-depends
+            ):
+      scope: keyword.other.cabal
+    - match: (==|>=|<=|<|>|\|\||&&|!)
+      scope: keyword.operator.cabal
+    - match: '(?<=[^\w])\d+(\.\d+)*(\.\*)?'
+      scope: constant.numeric.cabal
+    - match: '\w+:/(/[\w._\-\d%])+(\?[\w.+_\-\d%]+)(&[\w._+\-\d%]+)*'
+      scope: markup.underline.link.cabal
+    - match: |-
+        ^(?ix:
+        ( library
+        | custom-setup
+        ))$
+      scope: entity.name.section.cabal
+    - match: |-
+        ^(?ix:
+        ( executable
+        | flag
+        | test-suite
+        | source-repository
+        ))( |\t)+([\w\-_]+)$
+      captures:
+        1: entity.name.section.cabal
+        3: entity.name.function.cabal
+    - match: '^[ \t]*(if|else)'
+      scope: keyword.control.cabal
+    - match: ^\s*--.*$
+      scope: comment.line.double-dash
