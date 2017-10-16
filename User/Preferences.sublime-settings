@@ -34,8 +34,8 @@
 	"ignored_packages":
 	[
 		"Haskell",
-		"Markdown",
 		"LSP",
+		"Markdown",
 		"SublimeLinter",
 		"Vintage"
 	],
