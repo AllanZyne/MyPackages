@@ -14,7 +14,6 @@
 		"CSON Converter",
 		"EditorConfig",
 		"Emmet",
-		"GBK Support",
 		"HexViewer",
 		"IMESupport",
 		"Indent XML",
@@ -27,6 +26,7 @@
 		"QML",
 		"Sass",
 		"SublimeLinter",
+		"TrailingSpaces",
 		"Vue Syntax Highlight"
 	]
 }
