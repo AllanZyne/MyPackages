@@ -3,4 +3,11 @@
 !.gitignore
 
 !User/
+
+oscrypto-ca-bundle.crt
+Package Control.merged-ca-bundle
+
 !MyHaskell/
+!MyIdris/
+
+node_modules
