@@ -1,6 +1,7 @@
 %YAML 1.2
 ---
 # vscode-idris
+name: Idris (Literate)
 file_extensions:
   - lidr
 scope: source.idris.literate

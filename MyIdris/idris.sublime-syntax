@@ -1,6 +1,7 @@
 %YAML 1.2
 ---
 # vscode-idris
+name: Idris
 file_extensions:
   - idr
 scope: source.idris
