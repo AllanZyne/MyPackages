@@ -49,7 +49,7 @@ contexts:
     - include: param_decl
     - include: data_decl
     - include: function_signature
-    - include: ty_expression
+    - include: expression
   param_decl:
     - match: \b(parameters)\s+(\()
       captures:
@@ -100,7 +100,7 @@ contexts:
           captures:
             0: punctuation.delimiter.idris
         - include: ty_expression
-  ty_expression:
+  expression:
     - match: '->'
       scope: keyword.operator.arrow.idris
     - include: parameter_type
@@ -117,6 +117,23 @@ contexts:
     - include: string_double
     - include: string_single
     - include: data_ctor
+  ty_expression:
+    - match: '->'
+      scope: keyword.operator.arrow.idris
+    - include: parameter_type
+    - include: language_const
+    - include: operator
+    - include: quasiquote
+    - include: infix_function
+    - include: prelude_type
+    - include: delimiter
+    - include: number_nat
+    - include: number_integer
+    - include: number_float
+    - include: unit
+    - include: string_double
+    - include: string_single
+    - include: type_ctor
   function_signature:
     - match: '(([\w'']+)|\(([|!%$+\-.,=</>:]+)\))\s*(:)(?!:)'
       captures:
@@ -159,7 +176,11 @@ contexts:
   data_ctor:
     - match: >-
         \b[\p{Lu}\p{Lt}][\p{Ll}_\p{Lu}\p{Lt}\p{Nd}']*(?:\.[\p{Lu}\p{Lt}][\p{Ll}_\p{Lu}\p{Lt}\p{Nd}']*)*\b
-      scope: entity.name.function.ctor.idris
+      scope: constant.other.ctor.idris
+  type_ctor:
+    - match: >-
+        \b[\p{Lu}\p{Lt}][\p{Ll}_\p{Lu}\p{Lt}\p{Nd}']*(?:\.[\p{Lu}\p{Lt}][\p{Ll}_\p{Lu}\p{Lt}\p{Nd}']*)*\b
+      scope: storage.type.ctor.idris
   prelude_type:
     - match: \b(Type|Int|Nat|Integer|Float|Char|String|Ptr|Bits8|Bits16|Bits32|Bits64|Bool)\b
       scope: support.type.builtin.idris
