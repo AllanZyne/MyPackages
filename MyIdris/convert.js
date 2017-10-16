@@ -85,6 +85,7 @@ function converVSCJson(inputFile, outputFile) {
 	let data = JSON.parse(content);
 
 	let sublime_syntax = {
+		name: data.name,
 		file_extensions: data.fileTypes,
 		scope: data.scopeName,
 		contexts: {

@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+# vscode-idris
+file_extensions:
+  - lidr
+scope: source.idris.literate
+contexts:
+  main:
+    - match: |-
+        ^(?!>)(.*)(?=
+        )
+      scope: comment.line.documentation.idris.literate
+    - include: idris.sublime-syntax
