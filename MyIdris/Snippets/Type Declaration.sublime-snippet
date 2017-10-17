@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-data ${1:MyType} = ${2:Record {}} | ${3:Algebraic}
+data ${1:MyType} = ${2:Record {\}} | ${3:Algebraic}
 ]]></content>
 	<tabTrigger>data</tabTrigger>
 	<scope>source.idris</scope>
