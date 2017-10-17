@@ -22,7 +22,7 @@
 			"selector": "source.c++"
 		}
 	],
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/DA UI/DA Dark.tmTheme",
 	"fallback_encoding": "GBK",
 	"font_face": "Source Code Pro",
 	"font_options":
@@ -43,6 +43,7 @@
 	[
 		80
 	],
+	"skin": "DA UI/Elegant",
 	"spell_check": false,
-	"theme": "Adaptive.sublime-theme"
+	"theme": "DA.sublime-theme"
 }

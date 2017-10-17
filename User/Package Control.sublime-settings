@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AdvancedNewFile",
 		"Alignment",
 		"AlignTab",
@@ -12,6 +13,7 @@
 		"CMakeEditor",
 		"ConvertToUTF8",
 		"CSON Converter",
+		"DA UI",
 		"EditorConfig",
 		"Emmet",
 		"HexViewer",
