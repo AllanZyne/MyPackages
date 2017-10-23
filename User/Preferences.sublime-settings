@@ -22,7 +22,7 @@
 			"selector": "source.c++"
 		}
 	],
-	"color_scheme": "Packages/DA UI/DA Dark.tmTheme",
+	"color_scheme": "Packages/Visual Studio Dark/Visual Studio Dark.tmTheme",
 	"fallback_encoding": "GBK",
 	"font_face": "Source Code Pro",
 	"font_options":
