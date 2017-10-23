@@ -23,12 +23,18 @@
 		"MarkdownEditing",
 		"Ninja",
 		"NSIS",
+		"NSIS Completions & Snippets",
 		"Package Control",
 		"PackageDev",
 		"QML",
 		"Sass",
 		"SublimeLinter",
 		"TrailingSpaces",
+		"Visual Studio Dark",
 		"Vue Syntax Highlight"
+	],
+	"repositories":
+	[
+		"https://github.com/SublimeText/NSIS"
 	]
 }
