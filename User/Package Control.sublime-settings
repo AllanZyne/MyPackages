@@ -17,6 +17,7 @@
 		"EditorConfig",
 		"Emmet",
 		"HexViewer",
+		"HTMLBeautify",
 		"IMESupport",
 		"Indent XML",
 		"LSP",
@@ -29,7 +30,9 @@
 		"QML",
 		"Sass",
 		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"TrailingSpaces",
+		"VBScript",
 		"Visual Studio Dark",
 		"Vue Syntax Highlight"
 	],
