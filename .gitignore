@@ -9,5 +9,6 @@ Package Control.merged-ca-bundle
 
 !MyHaskell/
 !MyIdris/
+!Emmet/
 
 node_modules

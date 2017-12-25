@@ -3,6 +3,10 @@
 	"in_process_packages":
 	[
 	],
+	"install_prereleases":
+	[
+		"SublimeLinter"
+	],
 	"installed_packages":
 	[
 		"A File Icon",
@@ -13,7 +17,6 @@
 		"CMakeEditor",
 		"Compare Side-By-Side",
 		"ConvertToUTF8",
-		"CSON Converter",
 		"DA UI",
 		"Diffy",
 		"EditorConfig",
@@ -38,10 +41,6 @@
 		"VBScript",
 		"Visual Studio Dark",
 		"Vue Syntax Highlight"
-	],
-	"install_prereleases":
-	[
-		"SublimeLinter"
 	],
 	"repositories":
 	[

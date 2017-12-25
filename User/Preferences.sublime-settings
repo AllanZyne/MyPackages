@@ -22,7 +22,7 @@
 			"selector": "source.c++"
 		}
 	],
-	"color_scheme": "Packages/Visual Studio Dark/Visual Studio Dark.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Visual Studio Dark (SL).tmTheme",
 	"fallback_encoding": "GBK",
 	"font_face": "Source Code Pro",
 	"font_options":
@@ -34,7 +34,6 @@
 	"ignored_packages":
 	[
 		"Haskell",
-		"LSP",
 		"Markdown",
 		"SublimeLinter",
 		"Vintage"
