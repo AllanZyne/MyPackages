@@ -11,9 +11,11 @@
 		"AlignTab",
 		"BracketHighlighter",
 		"CMakeEditor",
+		"Compare Side-By-Side",
 		"ConvertToUTF8",
 		"CSON Converter",
 		"DA UI",
+		"Diffy",
 		"EditorConfig",
 		"Emmet",
 		"HexViewer",
@@ -27,6 +29,7 @@
 		"NSIS Completions & Snippets",
 		"Package Control",
 		"PackageDev",
+		"PostScript",
 		"QML",
 		"Sass",
 		"SublimeLinter",
@@ -35,6 +38,10 @@
 		"VBScript",
 		"Visual Studio Dark",
 		"Vue Syntax Highlight"
+	],
+	"install_prereleases":
+	[
+		"SublimeLinter"
 	],
 	"repositories":
 	[
