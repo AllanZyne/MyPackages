@@ -7,8 +7,7 @@
 oscrypto-ca-bundle.crt
 Package Control.merged-ca-bundle
 
-!MyHaskell/
-!MyIdris/
+!My*/
 !Emmet/
 
 node_modules

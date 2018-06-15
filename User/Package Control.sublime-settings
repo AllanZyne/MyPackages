@@ -3,47 +3,14 @@
 	"in_process_packages":
 	[
 	],
-	"install_prereleases":
-	[
-		"SublimeLinter"
-	],
 	"installed_packages":
 	[
-		"A File Icon",
-		"AdvancedNewFile",
-		"Alignment",
-		"AlignTab",
-		"BracketHighlighter",
-		"CMakeEditor",
-		"Compare Side-By-Side",
+		"AutomaticPackageReloader",
+		"Clang Format",
+		"CMake",
 		"ConvertToUTF8",
-		"DA UI",
-		"Diffy",
-		"EditorConfig",
-		"Emmet",
-		"HexViewer",
-		"HTMLBeautify",
 		"IMESupport",
-		"Indent XML",
-		"LSP",
-		"MarkdownEditing",
-		"Ninja",
-		"NSIS",
-		"NSIS Completions & Snippets",
 		"Package Control",
-		"PackageDev",
-		"PostScript",
-		"QML",
-		"Sass",
-		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
-		"TrailingSpaces",
-		"VBScript",
-		"Visual Studio Dark",
-		"Vue Syntax Highlight"
-	],
-	"repositories":
-	[
-		"https://github.com/SublimeText/NSIS"
+		"TypeScript"
 	]
 }

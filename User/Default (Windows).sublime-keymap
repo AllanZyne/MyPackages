@@ -1,5 +1,8 @@
 [
-	{ "keys": ["ctrl+alt+v"], "command": "paset_text_menu" },
-    { "keys": ["alt+up"], "command": "swap_line_up" },
-    { "keys": ["alt+down"], "command": "swap_line_down" },
+	{
+		"keys": ["ctrl+f5"],
+		"command": "package_reloader_reload"
+	},
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" }
 ]

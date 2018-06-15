@@ -1,0 +1,331 @@
+{
+    "name": "Visual Studio Dark",
+    "author": "Niklas Mollenhauer",
+    "variables":
+    {
+        "black": "hsl(0, 0%, 6%)",
+        "black2": "hsl(0, 0%, 12%)",
+        "blue": "hsl(203, 92%, 75%)",
+        "blue2": "hsl(206, 82%, 76%)",
+        "blue3": "hsl(207, 61%, 59%)",
+        "blue4": "hsl(210, 52%, 31%)",
+        "blue5": "hsl(201, 98%, 80%)",
+        "blue6": "hsl(168, 53%, 55%)",
+        "blue7": "hsl(213, 13%, 47%)",
+        "green": "hsl(114, 44%, 24%)",
+        "green2": "hsl(102, 28%, 43%)",
+        "green3": "hsl(101, 28%, 73%)",
+        "green4": "hsl(99, 28%, 73%)",
+        "grey": "hsl(231, 6%, 47%)",
+        "grey2": "hsl(60, 7%, 38%)",
+        "grey3": "hsl(0, 0%, 78%)",
+        "grey4": "hsl(0, 0%, 61%)",
+        "grey5": "hsl(0, 0%, 50%)",
+        "grey6": "hsl(0, 0%, 34%)",
+        "grey7": "hsl(0, 0%, 16%)",
+        "orange": "hsl(41, 53%, 67%)",
+        "purple": "hsl(252, 94%, 74%)",
+        "purple2": "hsl(239, 36%, 24%)",
+        "red": "hsl(0, 100%, 60%)",
+        "red2": "hsl(3, 66%, 39%)",
+        "red3": "hsl(338, 95%, 56%)",
+        "red4": "hsl(17, 50%, 78%)",
+        "red5": "hsl(18, 50%, 68%)",
+        "white": "hsl(0, 0%, 100%)",
+        "white2": "hsl(0, 0%, 86%)",
+        "yellow": "hsl(80, 76%, 53%)"
+    },
+    "globals":
+    {
+        "foreground": "var(white2)",
+        "background": "var(black2)",
+        "caret": "var(white2)",
+        "invisibles": "color(var(white) alpha(0.25))",
+        "line_highlight": "var(black)",
+        "selection": "var(blue4)"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Comparision Operator",
+            "scope": "keyword.operator.comparison",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "Assignment Operator",
+            "scope": "keyword.operator.assignment",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "Arithmetic Operator",
+            "scope": "keyword.operator.arithmetic",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(green4)"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant",
+            "foreground": "var(green3)"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Boolean",
+            "scope": "constant.language.boolean",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(red5)"
+        },
+        {
+            "name": "String interpolation",
+            "scope": "constant.character.escape, string source",
+            "foreground": "var(red4)"
+        },
+        {
+            "name": "Preprocessor line",
+            "scope": "meta.preprocessor",
+            "foreground": "var(grey4)"
+        },
+        {
+            "name": "Preprocessor directive",
+            "scope": "keyword.control.import",
+            "foreground": "var(grey4)"
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function, keyword.other.name-of-parameter.objc",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.type",
+            "foreground": "var(blue6)"
+        },
+        {
+            "name": "Type name",
+            "scope": "storage.type",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Type modifier",
+            "scope": "storage.modifier",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Inherited class name",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(blue6)"
+        },
+        {
+            "name": "Function parameter",
+            "scope": "variable.parameter"
+        },
+        {
+            "name": "Function argument and result types",
+            "scope": "storage.type.method",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Section",
+            "scope": "meta.section entity.name.section, declaration.section entity.name.section"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "Library object",
+            "scope": "support.class, support.type",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "foreground": "var(green4)"
+        },
+        {
+            "name": "Library variable",
+            "scope": "support.variable",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "JS: Operator",
+            "scope": "keyword.operator.js",
+            "foreground": "var(blue7)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Invalid trailing whitespace",
+            "scope": "invalid.deprecated.trailing-whitespace",
+            "background": "var(red)"
+        },
+        {
+            "name": "Embedded source",
+            "scope": "text source, string.unquoted",
+            "background": "var(grey7)"
+        },
+        {
+            "name": "Markup XML declaration",
+            "scope": "meta.xml-processing, declaration.xml-processing",
+            "foreground": "var(grey2)"
+        },
+        {
+            "name": "Markup DOCTYPE",
+            "scope": "meta.doctype, declaration.doctype",
+            "foreground": "var(grey5)"
+        },
+        {
+            "name": "Markup DTD",
+            "scope": "meta.doctype.DTD, declaration.doctype.DTD"
+        },
+        {
+            "name": "Markup tag",
+            "scope": "meta.tag, declaration.tag",
+            "foreground": "var(grey5)"
+        },
+        {
+            "name": "Markup name of tag",
+            "scope": "entity.name.tag",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Markup tag attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(blue2)"
+        },
+        {
+            "name": "Markup: Attribute Value",
+            "scope": "string.quoted.double.xml, string.quoted.double.html",
+            "foreground": "var(grey3)"
+        },
+        {
+            "name": "Markup: Heading",
+            "scope": "markup.heading",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Markup: Quote",
+            "scope": "markup.quote",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "Markup: List",
+            "scope": "markup.list",
+            "foreground": "var(white2)"
+        },
+        {
+            "name": "\u00a7 css tag-name",
+            "scope": "meta.selector.css entity.name.tag",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "\u00a7 css:pseudo-class",
+            "scope": "meta.selector.css entity.other.attribute-name.tag.pseudo-class",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "\u00a7 css#id",
+            "scope": "meta.selector.css entity.other.attribute-name.id",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "\u00a7 css.class",
+            "scope": "meta.selector.css entity.other.attribute-name.class",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "\u00a7 css property-name:",
+            "scope": "support.type.property-name.css",
+            "foreground": "var(blue5)"
+        },
+        {
+            "name": "\u00a7 css property-value;",
+            "scope": "meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css",
+            "foreground": "var(grey3)"
+        },
+        {
+            "name": "\u00a7 css @at-rule",
+            "scope": "meta.preprocessor.at-rule keyword.control.at-rule",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "C#: XML Comment Tags",
+            "scope": "source.cs comment.block.documentation.source.cs meta.tag.xml, source.cs comment.block.documentation.source.cs meta.tag.xml entity.name.tag.localname.xml, source.cs comment.block.documentation.source.cs meta.tag.xml entity.other.attribute-name",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "GitGutter deleted",
+            "scope": "markup.deleted.git_gutter",
+            "foreground": "var(red3)"
+        },
+        {
+            "name": "GitGutter inserted",
+            "scope": "markup.inserted.git_gutter",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "GitGutter changed",
+            "scope": "markup.changed.git_gutter",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "GitGutter ignored",
+            "scope": "markup.ignored.git_gutter",
+            "foreground": "var(grey6)"
+        },
+        {
+            "name": "GitGutter untracked",
+            "scope": "markup.untracked.git_gutter",
+            "foreground": "var(grey6)"
+        },
+        {
+            "name": "Git Modified Line",
+            "scope": "git.changes.x",
+            "background": "var(purple2)"
+        },
+        {
+            "name": "Git Added Line",
+            "scope": "git.changes.+",
+            "background": "var(green)"
+        },
+        {
+            "name": "Git Remove Line",
+            "scope": "git.changes.-",
+            "background": "var(red2)"
+        },
+        {
+        	"scope": "source - keyword - punctuation",
+        	"foreground": ["hsl(40, 60%, 70%)", "hsl(320, 60%, 70%)"]
+        }
+    ]
+}

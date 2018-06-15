@@ -1,48 +1,27 @@
 {
-	"auto_complete_triggers":
-	[
-		{
-			"characters": "<",
-			"selector": "text.html"
-		},
-		{
-			"characters": ".",
-			"selector": "source.js"
-		},
-		{
-			"characters": ".",
-			"selector": "source.ts"
-		},
-		{
-			"characters": ".",
-			"selector": "source.python"
-		},
-		{
-			"characters": ".>:",
-			"selector": "source.c++"
-		}
-	],
-	"color_scheme": "Packages/User/SublimeLinter/Visual Studio Dark (SL).tmTheme",
+	"color_scheme": "Packages/User/Visual Studio Dark.sublime-color-scheme",
+	"default_encoding": "GBK",
 	"fallback_encoding": "GBK",
-	"font_face": "Source Code Pro",
 	"font_options":
 	[
-		"no_italic"
+		"no_italic",
+		"dwrite_cleartype_natural"
 	],
 	"font_size": 12,
-	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Haskell",
-		"Markdown",
-		"SublimeLinter",
+		"TypeScript",
 		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_active"
 	],
 	"rulers":
 	[
 		80
 	],
-	"skin": "DA UI/Elegant",
-	"spell_check": false,
-	"theme": "DA.sublime-theme"
+	"show_encoding": true,
+	"theme": "Adaptive.sublime-theme",
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉",
 }

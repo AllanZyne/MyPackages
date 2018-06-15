@@ -1,7 +1,0 @@
-{
-    "default_root": "project_folder",
-    "new_file_default_root": "project_folder",
-    "rename_file_default_root": "current",
-    "copy_file_default_root": "project_folder",
-    "rename_default": "<filename>"
-}
