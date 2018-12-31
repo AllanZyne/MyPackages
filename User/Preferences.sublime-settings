@@ -2,6 +2,9 @@
 	"color_scheme": "Packages/User/Visual Studio Dark.sublime-color-scheme",
 	"default_encoding": "GBK",
 	"fallback_encoding": "GBK",
+    "highlight_line": true,
+    "show_encoding": true,
+    "show_line_endings": true,
 	"font_options":
 	[
 		"no_italic",
@@ -23,5 +26,5 @@
 	],
 	"show_encoding": true,
 	"theme": "Adaptive.sublime-theme",
-	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉",
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉"
 }
