@@ -20,6 +20,7 @@ from collections import OrderedDict
 from os import sep
 from os.path import dirname, normpath
 
+from .compat import u
 from .exceptions import ParsingError
 from .fnmatch import fnmatch
 
