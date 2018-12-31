@@ -28,10 +28,10 @@ def apply_config(view):
     try:
         config = get_properties(file_name)
     except EditorConfigError:
-        sublime.status_message('Dectect Editorconfig: file error')
+        sublime.status_message('.editorconfig format error')
     else:
-        sublime.status_message('Dectect Editorconfig: Loading')
-       
+        sublime.status_message('.editorconfig detected')
+
         indent_size = config.get('indent_size')
         tab_width = config.get('tab_width')
         indent_style = config.get('indent_style')
@@ -49,7 +49,7 @@ def apply_config(view):
             if indent_size == 'tab':
                 if tab_width and view.settings().get('tab_size') != int(tab_width):
                     print('*tab_size:', view.settings().get('tab_size'), tab_width)
-                    view.run_command('set_setting', {"setting": "tab_size", "value": int(tab_width)}) 
+                    view.run_command('set_setting', {"setting": "tab_size", "value": int(tab_width)})
             elif view.settings().get('tab_size') != int(indent_size):
                 print('*tab_size:', view.settings().get('tab_size'), indent_size)
                 view.run_command('set_setting', {"setting": "tab_size", "value": int(indent_size)})
