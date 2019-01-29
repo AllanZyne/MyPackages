@@ -3,6 +3,7 @@
 !.gitignore
 
 !User/
+!Default/
 
 oscrypto-ca-bundle.crt
 Package Control.merged-ca-bundle
