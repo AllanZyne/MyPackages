@@ -1,30 +1,40 @@
 {
-	"color_scheme": "Packages/User/Visual Studio Dark.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"default_encoding": "GBK",
 	"fallback_encoding": "GBK",
-    "highlight_line": true,
-    "show_encoding": true,
-    "show_line_endings": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".vscode",
+		".ccls-cache"
+	],
 	"font_options":
 	[
 		"no_italic",
 		"directwrite"
 	],
 	"font_size": 12,
+	"highlight_line": true,
 	"ignored_packages":
 	[
+		"ConvertToUTF8",
 		"TypeScript",
 		"Vintage"
 	],
-	"indent_guide_options":
+	"index_exclude_patterns":
 	[
-		"draw_active"
+		"*.log"
 	],
 	"rulers":
 	[
 		80
 	],
+	"show_definitions": false,
 	"show_encoding": true,
+	"show_line_endings": true,
 	"theme": "Adaptive.sublime-theme",
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉"
 }
