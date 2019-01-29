@@ -1,5 +1,7 @@
 {
 	"bootstrapped": true,
+	"http_proxy": "http://127.0.0.1:1080",
+	"https_proxy": "https://127.0.0.1:1080",
 	"in_process_packages":
 	[
 	],
@@ -11,6 +13,9 @@
 		"ConvertToUTF8",
 		"IMESupport",
 		"Package Control",
-		"TypeScript"
+		"PackageDev",
+		"PackageResourceViewer",
+		"TypeScript",
+		"TypeScript Syntax"
 	]
 }
