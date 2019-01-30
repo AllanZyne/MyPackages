@@ -100,6 +100,7 @@ class EditorConfigParser(object):
             fp = open(filename, encoding='utf-8')
         except IOError:
             return
+        print('read .editorconfig', filename)
         self._read(fp, filename)
         fp.close()
 

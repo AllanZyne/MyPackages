@@ -30,7 +30,13 @@ def apply_config(view):
     except EditorConfigError:
         sublime.status_message('.editorconfig format error')
     else:
-        sublime.status_message('.editorconfig detected')
+        if not len(config):
+            return
+
+        settings = view.settings()
+        if not settings.has('editorconfig_detected'):
+            sublime.status_message('.editorconfig detected')
+            settings.set('editorconfig_detected', True)
 
         indent_size = config.get('indent_size')
         tab_width = config.get('tab_width')
