@@ -1,7 +1,7 @@
 {
 	"bootstrapped": true,
-	"http_proxy": "http://127.0.0.1:1080",
-	"https_proxy": "https://127.0.0.1:1080",
+	"http_proxy": "http://127.0.0.1:1065",
+	"https_proxy": "https://127.0.0.1:1065",
 	"in_process_packages":
 	[
 	],
@@ -11,6 +11,7 @@
 		"Clang Format",
 		"CMake",
 		"ConvertToUTF8",
+		"Coq",
 		"IMESupport",
 		"Package Control",
 		"PackageDev",

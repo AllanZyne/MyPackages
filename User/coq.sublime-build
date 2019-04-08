@@ -1,0 +1,11 @@
+{
+    "cmd": ["coqc", "-Q", "$file_path", "LF", "$file"],
+    "selector": "source.coq",
+    "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*), characters ([0-9\\-]*)",
+    "variants": [
+    	{
+    		"name": "Test",
+    		"cmd": ["coqc", "$file"]
+    	}
+    ]
+}
