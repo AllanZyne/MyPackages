@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"color_scheme": "Packages/User/Celeste Dark.sublime-color-scheme",
 	"default_encoding": "GBK",
 	"fallback_encoding": "GBK",
 	"folder_exclude_patterns":
@@ -20,7 +20,6 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"ConvertToUTF8",
 		"TypeScript",
 		"Vintage"
 	],
