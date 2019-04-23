@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/Celeste Dark.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"default_encoding": "GBK",
 	"fallback_encoding": "GBK",
 	"folder_exclude_patterns":
@@ -11,16 +11,21 @@
 		".vscode",
 		".ccls-cache"
 	],
+	"font_face": "Fira Code",
 	"font_options":
 	[
 		"no_italic",
-		"directwrite"
+		"directwrite",
+		"dlig",
+		"ss02"
 	],
 	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"IMESupport",
 		"TypeScript",
+		"TypeScript Syntax",
 		"Vintage"
 	],
 	"index_exclude_patterns":
@@ -32,8 +37,9 @@
 		80
 	],
 	"show_definitions": false,
-	"show_encoding": true,
-	"show_line_endings": true,
+	"show_encoding": false,
+	"show_line_endings": false,
 	"theme": "Adaptive.sublime-theme",
-	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉"
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉",
+	"show_errors_inline": false,
 }

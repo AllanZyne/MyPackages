@@ -1,7 +1,7 @@
 {
 	"bootstrapped": true,
-	"http_proxy": "http://127.0.0.1:1065",
-	"https_proxy": "https://127.0.0.1:1065",
+	"http_proxy": "http://127.0.0.1:1082",
+	"https_proxy": "http://127.0.0.1:1082",
 	"in_process_packages":
 	[
 	],
@@ -13,6 +13,7 @@
 		"ConvertToUTF8",
 		"Coq",
 		"IMESupport",
+		"LaTeXTools",
 		"Package Control",
 		"PackageDev",
 		"PackageResourceViewer",
