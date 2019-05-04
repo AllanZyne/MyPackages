@@ -38,8 +38,8 @@
 	],
 	"show_definitions": false,
 	"show_encoding": false,
+	"show_errors_inline": false,
 	"show_line_endings": false,
 	"theme": "Adaptive.sublime-theme",
-	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉",
-	"show_errors_inline": false,
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉"
 }
