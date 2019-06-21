@@ -1,0 +1,233 @@
+{
+    // Rough modified version of Celeste to darken it up
+    "name": "Spacemacs Dark",
+    "author": "",
+    "variables":
+    {
+        "act2": "#5d4d7a",
+        "act1": "#222226",
+        "base": "#b2b2b2",
+        "base-dim": "#545557",
+        "bg1": "#292b2e",
+        "bg2": "#212026",
+        "bg3": "#100a14",
+        "bg4": "#0a0814",
+        "border": "#5d4d7a",
+        "cblk": "#cbc1d5",
+        "cblk-bg": "#2f2b33",
+        "cblk-ln": "#827591",
+        "cblk-ln-bg": "#373040",
+        "cursor": "#e3dedd",
+        "const": "#a45bad",
+        "comment": "#2aa1ae",
+        "comment-bg": "#292e34",
+        "comp": "#c56ec3",
+        "err": "#e0211d",
+        "func": "#bc6ec5",
+        "head1": "#4f97d7",
+        "head1-bg": "#293239",
+        "head2": "#2d9574",
+        "head2-bg": "#293235",
+        "head3": "#67b11d",
+        "head3-bg": "#293235",
+        "head4": "#b1951d",
+        "head4-bg": "#32322c",
+        "highlight": "#444155",
+        "keyword": "#4f97d7",
+        "lnum": "#44505c",
+        "mat": "#86dc2f",
+        "meta": "#9f8766",
+        "str": "#2d9574",
+        "suc": "#86dc2f",
+        "ttip": "#9a9aba",
+        "ttip-sl": "#5e5079",
+        "ttip-bg": "#34323e",
+        "type": "#ce537a",
+        "var": "#7590db",
+        "war": "#dc752f",
+        "aqua": "#2d9574",
+        "aqua-bg": "#293235",
+        "green": "#67b11d",
+        "green-bg": "#293235",
+        "green-bg-s": "#29422d",
+        "cyan": "#28def0",
+        "red": "#f2241f",
+        "red-bg": "#3c2a2c",
+        "red-bg-s": "#512e31",
+        "blue": "#4f97d7",
+        "blue-bg": "#293239",
+        "violet": "#a31db1",
+        "yellow": "#b1951d",
+        "yellow-bg": "#32322c",
+    },
+    "globals":
+    {
+        "foreground": "var(base)",
+        "background": "var(bg1)",
+        "caret": "var(cursor)",
+        "selection": "var(highlight)",
+        "selection_border": "color(var(light_gray) a(0.3))",
+        "inactive_selection": "color(var(light_gray) a(0.06))",
+        "line_highlight": "var(bg2)",
+        "highlight": "var(highlight)",
+        "find_highlight": "var(bg1)",
+        "find_highlight_foreground": "var(mat)",
+        "active_guide": "var(red)",
+        "stack_guide": "var(orange)",
+        // "shadow": "#bbb",
+        "accent": "var(meta)",
+        "misspelling": "var(err)",
+        "fold_marker": "var(err)",
+    },
+    "rules":
+    [
+        {
+            "scope": "text",
+            "foreground": "var(base)"
+        },
+        // {
+        //     "scope": "source - comment - string - keyword - punctuation - storage - entity - source.css",
+        //     // "foreground": ["var(green)", "var(purple)"]
+        // },
+        {
+            "scope": "comment",
+            "foreground": "var(comment)",
+            "background": "var(comment-bg)",
+        },
+        {
+            "scope": "entity.name - entity.name.tag - entity.name.section",
+            "foreground": "var(func)",
+            "font_style": "bold",
+        },
+        {
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(func)",
+            // "background": "#1e1e1e",
+        },
+        {
+            "scope": "support.function.builtin, support.class.builtin, variable.language",
+            "foreground": "var(var)",
+            // "font_style": "italic"
+        },
+        {
+            "scope": "keyword.operator",
+            "foreground": "var(base)"
+        },
+        {
+            "scope": "keyword",
+            "foreground": "var(keyword)",
+            "font_style": "bold",
+        },
+        {
+            "scope": "constant.language",
+            "foreground": "var(const)",
+        },
+        {
+            "scope": "constant.numeric",
+            "foreground": "var(const)"
+        },
+        {
+            "scope": "constant.character",
+            "foreground": "var(const)"
+        },
+        {
+            "scope": "storage, support.type",
+            "foreground": "var(type)",
+            "font_style": "bold",
+        },
+        {
+            "scope": "string",
+            "foreground": "var(str)",
+        },
+        {
+            "scope": "punctuation.definition.string",
+            "foreground": "var(str)"
+        },
+        {
+            "scope": "punctuation",
+            "foreground": "str"
+        },
+        {
+            "scope": "meta.function-call variable.parameter",
+            "foreground": "var(var)"
+        },
+        {
+            "scope": "invalid.illegal",
+            "foreground": "var(err)",
+            "background": "var(bg1)",
+        },
+        {
+            "scope": "invalid.deprecated",
+            "foreground": "var(war)",
+            "background": "var(bg1)",
+        },
+        // HTML
+        {
+            "scope": "entity.name.tag",
+            "foreground": "var(blue)"
+        },
+        // HTML/CSS
+        {
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(teal)"
+        },
+        {
+            "scope": "entity.other.attribute-name.id",
+            "foreground": "var(orange)"
+        },
+        // CSS
+        {
+            "scope": "support.type.property-name",
+            "foreground": "var(type)"
+        },
+        {
+            "scope": "support.type.vendor-prefix",
+            "foreground": "var(type)"
+        },
+        {
+            "scope": "entity.other.pseudo-class",
+            "foreground": "var(type)"
+        },
+        // Markdown
+        {
+            "scope": "markup.heading.1 entity.name.section",
+            "foreground": "var(blue)",
+            "font_style": "bold"
+        },
+        {
+            "scope": "markup.heading.2 entity.name.section",
+            "foreground": "var(blue)"
+        },
+        {
+            "scope": "entity.name.section",
+            "foreground": "var(teal)"
+        },
+        {
+            "scope": "markup.italic",
+            "foreground": "var(black)",
+            "font_style": "italic"
+        },
+        {
+            "scope": "markup.bold",
+            "foreground": "var(black)",
+            "font_style": "bold"
+        },
+        {
+            "scope": "markup.list punctuation.definition.list_item",
+            "foreground": "var(dark_orange)"
+        },
+        {
+            "scope": "markup.raw",
+            "background": "#202020"
+        },
+        {
+            "scope": "markup.raw constant.other.language-name",
+            "foreground": "var(green)",
+            "font_style": "italic"
+        },
+        {
+            "scope": "meta.table.header - punctuation",
+            "font_style": "bold"
+        },
+    ]
+}
