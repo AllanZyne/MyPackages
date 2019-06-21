@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the Sublime Text Keymap syntax
+{
+	
+	"word_wrap": "true"
+}
