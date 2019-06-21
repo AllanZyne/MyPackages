@@ -1,7 +1,5 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
-	"default_encoding": "GBK",
-	"fallback_encoding": "GBK",
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -11,21 +9,16 @@
 		".vscode",
 		".ccls-cache"
 	],
-	"font_face": "Fira Code",
+	"font_face": "FuraCode NF",
 	"font_options":
 	[
-		"no_italic",
-		"directwrite",
-		"dlig",
-		"ss02"
+		"no_italic"
 	],
-	"font_size": 12,
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"IMESupport",
-		"TypeScript",
-		"TypeScript Syntax",
+		"subpixel_antialias",
 		"Vintage"
 	],
 	"index_exclude_patterns":
@@ -39,7 +32,7 @@
 	"show_definitions": false,
 	"show_encoding": false,
 	"show_errors_inline": false,
-	"show_line_endings": false,
+	"show_line_endings": true,
 	"theme": "Adaptive.sublime-theme",
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、，。～！：；…？—「」『』‘’“”《》〈〉"
 }

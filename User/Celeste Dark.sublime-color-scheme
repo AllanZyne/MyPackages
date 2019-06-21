@@ -51,7 +51,7 @@
         },
         {
             "scope": "source - comment - string - keyword - punctuation - storage - entity - source.css",
-            "foreground": ["var(green)", "var(purple)"]
+            // "foreground": ["var(green)", "var(purple)"]
         },
         {
             "scope": "comment",

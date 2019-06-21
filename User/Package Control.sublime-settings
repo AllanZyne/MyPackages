@@ -11,11 +11,9 @@
 		"Clang Format",
 		"CMake",
 		"ConvertToUTF8",
-		"IMESupport",
 		"Package Control",
 		"PackageDev",
 		"PackageResourceViewer",
-		"TypeScript",
-		"TypeScript Syntax"
+		"Trimmer"
 	]
 }
