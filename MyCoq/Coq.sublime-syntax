@@ -1,0 +1,96 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Coq
+file_extensions:
+  - v
+scope: source.coq
+contexts:
+  main:
+    - include: block_comment
+    - match: \b(Require|Import|Export|Local|Global|Open|Scope|From)\b
+      comment: Vernacular import keywords
+      scope: keyword.control.import.coq
+    - match: '(Lemma|Theorem|Goal|Example)\s+([a-zA-Z][a-zA-Z0-9_'']*)'
+      comment: Theorem declarations
+      captures:
+        1: keyword.source.coq
+        2: entity.name.function.theorem.coq
+    - match: '(Program Definition|Program Fixpoint|Program CoFixpoint|Program Function|Function|CoFixpoint|Fixpoint|Definition|Let)\s+([a-zA-Z_][a-zA-Z0-9_'']*)'
+      comment: Definitions
+      captures:
+        1: keyword.source.coq
+        2: entity.name.function.coq
+    - match: '(CoInductive|Inductive)\s+([a-zA-Z][a-zA-Z0-9_'']*)'
+      comment: Inductive type declarations
+      captures:
+        1: keyword.source.coq
+        2: entity.name.type.coq
+    - match: '(Ltac)\s+([a-zA-Z][a-zA-Z0-9_'']*)'
+      comment: Ltac declarations
+      captures:
+        1: keyword.source.coq
+        2: entity.name.function.ltac
+    - match: \b(Hint|Constructors|Resolve|Rewrite|Proof|Ltac|Qed|Defined|Implicit|Set|Arguments|Tactic Notation|Notation|Section|Module Type|Module|End|Variables|Record|Check|Print|Eval)\b
+      comment: Vernacular keywords
+      scope: keyword.source.coq
+    - match: \b(admit|Admitted|Abort)\b
+      comment: Admits are bad
+      scope: invalid.illegal.admit.coq
+    - match: ':|=|<|>|\*|\+|-|~'
+      comment: Operators
+      scope: keyword.operator.coq
+    - match: \b(forall|exists|Type|Set|Prop)\b
+      comment: Type keywords
+      scope: support.type.coq
+    - match: \b(try|repeat|progress|set|fresh|solve|now|first)\b
+      comment: Ltac keywords
+      scope: keyword.control.ltac
+    - match: \b(into|with|eqn|by|as|using|in)\b
+      comment: Common Ltac connectors
+      # scope: keyword.control.ltac
+      scope: support.function.builtin.ltac
+    - match: \b(match|lazymatch|multimatch|fun|with|returns|end|let|in|if|then|else)\b
+      comment: Gallina keywords
+      scope: keyword.control.gallina
+    - match: \b(intro|intros|induction|destruct|auto|eauto|eassumption|apply|eapply|assumption|constructor|econstructor|reflexivity|inversion|assert|split|omega|fold|unfold|specialize|rewrite|erewrite|symmetry|refine|simpl|intuition|firstorder|generalize|idtac|exist|exists|eexists|elim|eelim|rename|subst|congruence|trivial|left|right|pose|discriminate|clear|clearbody|contradict|contradiction|exact|dependent|remember)\b
+      comment: Ltac builtins
+      scope: support.function.builtin.ltac
+    - match: \bnil\b
+      scope: constant.language.nil.gallina
+    - match: '\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\.[0-9]+)?))\b'
+      scope: constant.numeric.gallina
+    - match: \bTrue\b
+      scope: constant.language.boolean.true.gallina
+    - match: \bFalse\b
+      scope: constant.language.boolean.false.gallina
+    - match: \b_\b
+      scope: constant.language.wildcard.coq
+    - match: '"'
+      captures:
+        0: punctuation.definition.string.begin.coq
+      push:
+        - meta_scope: string.quoted.double.coq
+        - match: '"'
+          captures:
+            0: punctuation.definition.string.end.coq
+          pop: true
+
+  block_comment:
+    - match: \(\*(?!#)
+      push:
+        - meta_scope: comment.block.coq
+        - include: block_comment
+        - include: block_double_quoted_string
+        - match: \*\)
+          pop: true
+  block_double_quoted_string:
+    - match: '"'
+      captures:
+        0: punctuation.definition.string.begin.coq
+      push:
+        - meta_scope: string.quoted.double.coq
+        - match: '"'
+          captures:
+            0: punctuation.definition.string.end.coq
+          pop: true
