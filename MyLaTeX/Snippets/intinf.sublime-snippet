@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\int_{-\infty}^\infty ${1}\,d${2}
+]]></content>
+	<tabTrigger>intinf</tabTrigger>
+	<scope>text.tex.latex meta.environment.math</scope>
+</snippet>

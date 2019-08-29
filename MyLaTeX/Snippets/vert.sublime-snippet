@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\lvert ${1} \rvert
+]]></content>
+	<tabTrigger>vert</tabTrigger>
+	<scope>text.tex.latex meta.environment.math</scope>
+</snippet>

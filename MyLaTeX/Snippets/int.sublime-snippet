@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\int ${1}\,d${2}
+]]></content>
+	<tabTrigger>int</tabTrigger>
+	<scope>text.tex.latex meta.environment.math</scope>
+</snippet>

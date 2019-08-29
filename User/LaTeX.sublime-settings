@@ -1,5 +1,6 @@
 // These settings override both User and Default settings for the LaTeX syntax
 {
 	"line_numbers": false,
-	"tab_size": 2
+	"tab_size": 2,
+	"auto_complete_selector": "text.tex"
 }

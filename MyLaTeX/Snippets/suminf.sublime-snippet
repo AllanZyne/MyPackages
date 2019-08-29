@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\sum_{${1}=-\infty}^\infty ${2}
+]]></content>
+	<tabTrigger>suminf</tabTrigger>
+	<scope>text.tex.latex meta.environment.math</scope>
+</snippet>
