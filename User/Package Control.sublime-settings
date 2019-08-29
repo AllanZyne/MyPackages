@@ -11,6 +11,7 @@
 		"Clang Format",
 		"CMake",
 		"ConvertToUTF8",
+		"Generic Config",
 		"Package Control",
 		"PackageDev",
 		"PackageResourceViewer",
