@@ -1,0 +1,38 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+file_extensions:
+  - wiki
+scope: text.wiki
+contexts:
+  main:
+    - match: '^(==+).+(==+)'
+      captures:
+        1: punctuation.definition.heading.wiki
+        2: punctuation.definition.heading.wiki
+      scope: markup.heading
+
+    - match: ^#.
+      scope: markup.list.unnumbered.bullet.wiki
+    - match: ^\*.
+      scope: markup.list.unnumbered.bullet.wiki
+    - match: \'\'\'.+\'\'\'
+      scope: markup.bold.wiki
+    - match: \'\'.+\'\'
+      scope: markup.italic.wiki
+    - match: (\[)(math)(\])(.*?)(\[/)(math)(\])
+      captures:
+        1: punctuation.definition.tag.begin.wiki
+        2: entity.name.tag.wiki
+        3: punctuation.definition.tag.end.wiki
+        4: text.tex.latex meta.environment.math.wiki
+        5: punctuation.definition.tag.begin.wiki
+        6: entity.name.tag.wiki
+        7: punctuation.definition.tag.end.wiki
+      scope:
+    - match: (\[/?)(\w+).*?(\])
+      captures:
+        1: punctuation.definition.tag.begin.wiki
+        2: entity.name.tag.wiki
+        3: punctuation.definition.tag.end.wiki
+      scope: markup.tag.wiki

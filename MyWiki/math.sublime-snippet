@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+[math]${1}[/math]
+]]></content>
+	<tabTrigger>math</tabTrigger>
+	<scope>text.wiki</scope>
+</snippet>
