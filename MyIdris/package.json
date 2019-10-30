@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "js-yaml": "^3.10.0"
+    "js-yaml": "^3.13.1"
   }
 }
